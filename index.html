@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Ayush HariomTatsat Shukla – Student and Coder.">
+
+  <title>3D Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f2027;
+      color: white;
+      overflow-x: hidden;
+    }
+    body {
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 400px) {
+      .card {
+        width: 90%;
+        height: auto;
+      }
+      .card {
+        position: relative; /* Add this */
+      }
+      
+      .card-side {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+    }
+    
+    .card-container {
+      perspective: 1000px;
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+    }
+    .card {
+      width: 300px;
+      height: 400px;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+    .card-side {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card-front {
+      background: #1e3c72;
+    }
+    .card-back {
+      background: #2a5298;
+      transform: rotateY(180deg);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    p, ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0f2027;
+      color: #ccc;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 10px;
+      background-color: #1e3c72;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .download-btn:hover {
+      background-color: #2a5298;
+      transform: scale(1.05);
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ayush HariomTatsat Shukla</h1>
+    <p>Full-time Student | Part-time Coder </p>
+  </header>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-side card-front">
+        <h2>Hello!</h2>
+        <p>I love Coding and Math Teaching.</p>
+      </div>
+      <div class="card-side card-back">
+        <h2>Contact Me</h2>
+        <p>ayushlab02@email.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="Professional Modern CV Resume.pdf" download class="download-btn">Download Resume</a>
+  </div>
+   
+
+  <footer>
+
+    <p>© 2025 Ayush Shukla. All rights reserved.</p>
+  </footer>
+</body>
+</html>
